@@ -1,6 +1,5 @@
 import sqlite3 as sql
 from requests import get
-from bs4 import BeautifulSoup
 import re
 
 URL = "http://wikidpr.org/anggota/{}"
