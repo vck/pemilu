@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup as bs
 URL = "http://wikidpr.org/anggota/{}"
 
 def get_candidate_data(candidate_id: str):
-   req = request.get(URL.format(candidate_id))
+   req = get(URL.format(candidate_id))
    html = req.text
    soup = bs(html, "html.parser")
    text = soup.text
